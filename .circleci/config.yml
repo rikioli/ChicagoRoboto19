@@ -23,5 +23,9 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
 
       - run:
+          name: Static Analysis Checks
+          command: ./gradlew ktlintCheck
+
+      - run:
           name: Assemble
           command: ./gradlew assemble
