@@ -5,7 +5,7 @@
 echo "Checking code formatting"
 
 
-./gradlew ktlintCheck
+./gradlew ktlintReleaseCheck
 
 status=$?
 
