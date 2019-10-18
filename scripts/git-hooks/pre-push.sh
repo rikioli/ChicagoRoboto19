@@ -4,7 +4,8 @@
 
 echo "Checking code formatting"
 
-./gradlew app:ktlintCheck --daemon
+
+./gradlew ktlintCheck
 
 status=$?
 
